@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avion</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -11,10 +11,17 @@
     <header>
         <div class="header__container--top"> 
             <ul class="header__list"> 
-                <li class="header__item--search"><button><img src="img/search.png" alt="search"></button></li>
+                <li class="header__item--search">
+                    <button>
+                        <img src="img/search.png" alt="search">
+                    </button>
+                    <button class="header__hidden-button--phone-menu" >
+                        <img src="img/menuPhone.png" alt="">
+                    </button>
+                </li>
                 <li class="header__item--logo"><img src="img/logo.png" alt="Avion"></li>
                 <li class="header__item--login">
-                    <img src="img/basket.png" alt="basket">
+                    <img class="hidden" src="img/basket.png" alt="basket">
                     <img src="img/login.png" alt="login">
                 </li>
             </ul>
@@ -120,11 +127,13 @@
                     </div>
                     <div>
                         <img src="img/chair.png" alt="">
+                        <img class="cards--ceramiks__none" src="img/lamp.png" alt="">
                         <h3>The Dandy chair</h3>
                         <span>£250</span>
                     </div>
                     <div>
                         <img src="img/dandyChair.png" alt="">
+                        <img class="cards--ceramiks__none" src="img/vaseSet.png" alt="">
                         <h3>The Dandy chair</h3>
                         <span>£250</span>
                     </div>

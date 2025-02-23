@@ -16,6 +16,9 @@ body {
 .header__list .header__item--login:last-child img:first-child {
   padding-right: 16px;
 }
+.header__hidden-button--phone-menu {
+  display: none;
+}
 .header__border {
   margin-top: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -124,6 +127,9 @@ body {
 }
 .main__cards--ceramiks div img {
   margin-bottom: 24px;
+}
+.main__cards--ceramiks .cards--ceramiks__none {
+  display: none;
 }
 .main__cards--ceramiks div h3 {
   font-size: 20px;
@@ -352,6 +358,9 @@ footer {
   .main__container--benefist {
     padding: 0;
   }
+  .main__container--benefist input {
+    max-width: 224px;
+  }
   .text-block__bottom {
     padding-top: 0;
   }
@@ -372,5 +381,156 @@ footer {
   }
   .footer__block--top .footer__right {
     margin-top: 40px;
+  }
+  .footer__block--top .footer__right input {
+    max-width: 224px;
+  }
+}
+@media (max-width: 768px) {
+  .header__container--top {
+    padding: 20px 20px 20px 24px;
+  }
+  .header__item--logo {
+    order: -1;
+  }
+  .header__hidden-button--phone-menu {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .header__item--login {
+    display: none;
+  }
+  .header__border {
+    display: none;
+  }
+  .header__container--bottom {
+    display: none;
+  }
+  .main__container--top {
+    padding-top: 0;
+  }
+  .main__container--top .main__text-block h1 {
+    margin-bottom: 40px;
+  }
+  .main__head-block {
+    padding: 0 24px 24px 24px;
+  }
+  .main__head-block br {
+    display: none;
+  }
+  .main__block--benefist {
+    padding: 0 24px;
+  }
+  .main__block--benefist h2 {
+    text-align: center;
+  }
+  .footer__container--top {
+    padding: 40px 24px 16px 24px;
+  }
+  .footer__container--top .footer__block--top {
+    align-items: center;
+  }
+  .footer__container--bottom {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .footer__container--bottom .footer__block--bottom {
+    padding: 20px 0;
+  }
+  .footer__container--bottom .footer__block--bottom p {
+    margin: 0 auto;
+  }
+  .footer__container--bottom .footer__block--bottom div {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .main__head-block .main__text-block p {
+    text-align: start;
+  }
+  .main__head-block .main__text-block a {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .main__img {
+    display: none;
+  }
+  .main__list--advantages {
+    align-items: start;
+  }
+  .main__list--advantages div:last-child {
+    margin-bottom: 0;
+  }
+  .main__container--new-ceramics {
+    padding: 48px 24px 38px 24px;
+  }
+  .main__container--new-ceramics .main__block--new-ceramics h2 {
+    align-self: flex-start;
+  }
+  .main__container--new-ceramics .main__cards--ceramiks {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 16px;
+  }
+  .popular-products .main__cards--ceramiks div img,
+  .main__cards--ceramiks div:first-child {
+    display: none;
+  }
+  .popular-products .main__cards--ceramiks div img.cards--ceramiks__none,
+  .main__cards--ceramiks div:first-child.cards--ceramiks__none {
+    display: block;
+  }
+  .main__block--benefist {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main__block--benefist h2 {
+    padding-top: 48px;
+    font-size: 20px;
+    align-self: start;
+  }
+  .main__block--benefist p {
+    text-align: start;
+    font-size: 14px;
+    padding-bottom: 64px;
+  }
+  .main__block--benefist p br {
+    display: none;
+  }
+  .main__block--benefist form {
+    margin-bottom: 38px;
+  }
+  .main__block--benefist form input {
+    width: 224px;
+  }
+  .main__container--bottom {
+    margin-top: 48px;
+  }
+  .main__container--bottom .main__block--bottom {
+    padding-bottom: 38px;
+  }
+  .main__container--bottom h2 {
+    font-size: 20px;
+    max-width: 274px;
+    align-self: start;
+    padding-bottom: 12px;
+  }
+  .main__container--bottom p {
+    font-size: 14px;
+  }
+  .footer__block--top {
+    align-items: start;
+  }
+  .footer__left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .footer__left ul:nth-child(2) {
+    grid-row-start: 1;
+  }
+}
+@media (max-width: 360px) {
+  .footer__block--top .footer__right input {
+    width: 190px;
   }
 }
